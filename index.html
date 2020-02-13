@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercicio 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <script>
+        var imposto = 45;
+        var distribuidor = 28;
+
+        var custo_fabrica, valor_distribuidor, valor_imposto, custo_consumidor;
+
+        custo_fabrica = parseInt(prompt("Digite o Valor Custo Fabrica"));
+
+        valor_distribuidor = custo_fabrica + (custo_fabrica * distribuidor / 100);
+
+        valor_imposto = custo_fabrica + (custo_fabrica * imposto / 100);
+        
+        custo_consumidor = custo_fabrica + valor_distribuidor + valor_imposto;
+
+        document.write("O Custo Consumidor é: " + custo_consumidor);
+    </script>    
+</body>
+</html>
